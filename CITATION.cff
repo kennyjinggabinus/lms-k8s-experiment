@@ -15,8 +15,8 @@ authors:
 version: "1.0.0"
 date-released: 2026-04-18
 doi: "10.5281/zenodo.XXXXXXX"   # replace after Zenodo deposit
-url: "https://github.com/YOUR-USERNAME/lms-k8s-experiment"   # replace with your repo URL
-repository-code: "https://github.com/YOUR-USERNAME/lms-k8s-experiment"
+url: "https://github.com/kennyjinggabinus/lms-k8s-experiment"   # replace with your repo URL
+repository-code: "https://github.com/kennyjinggabinus/lms-k8s-experiment"
 license: MIT
 keywords:
   - kubernetes
