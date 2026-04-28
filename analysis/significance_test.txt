@@ -1,0 +1,2 @@
+Mann-Whitney U test: Docker vs K8s HPA at 100 VUs
+U = 5936658366, p = 0.000000, significant = True
