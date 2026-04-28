@@ -38,14 +38,12 @@ lms-k8s-experiment/
 │   └── metrics-server.yaml     # Metrics Server for local K8s (e.g., minikube)
 ├── k6-scripts/             # k6 load test scripts
 ├── docker-compose.yml      # Docker Compose baseline configuration
-├── analysis/
-│   ├── master_results.csv      # Raw per-run results (all conditions)
-│   ├── scalability_summary.csv # Aggregated mean ± SD, P95, P99, throughput
-│   ├── significance_test.txt   # Mann-Whitney U test output
-│   ├── parse_results.py        # Script to parse k6 JSON output
-│   └── compute_summary.py      # Script to compute summary statistics
-└── results/
-    └── failure/            # Raw k6 output for overload/failure runs
+└── analysis/
+    ├── master_results.csv      # Raw per-run results (all conditions)
+    ├── scalability_summary.csv # Aggregated mean ± SD, P95, P99, throughput
+    ├── significance_test.txt   # Mann-Whitney U test output
+    ├── parse_results.py        # Script to parse k6 JSON output
+    └── compute_summary.py      # Script to compute summary statistics
 ```
 
 ---
