@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "Replication Package: LMS–Kubernetes Pilot Study"
+abstract: >
+  Replication package for the pilot study reported in 
+  "Kubernetes-Orchestrated Reference Architecture for LMS–Recommender 
+  System Integration: Systematic Review and Design" (ICICEL 2026).
+  Contains service source code, Kubernetes manifests, k6 load-test scripts,
+  raw results, and analysis scripts for the ADD-SC-01 scalability validation.
+authors:
+  - family-names: "Jingga"
+    given-names: "Kenny"
+    orcid: "https://orcid.org/XXXX-XXXX-XXXX-XXXX"   # replace with your ORCID
+version: "1.0.0"
+date-released: 2026-04-18
+doi: "10.5281/zenodo.XXXXXXX"   # replace after Zenodo deposit
+url: "https://github.com/YOUR-USERNAME/lms-k8s-experiment"   # replace with your repo URL
+repository-code: "https://github.com/YOUR-USERNAME/lms-k8s-experiment"
+license: MIT
+keywords:
+  - kubernetes
+  - LMS
+  - recommender system
+  - microservices
+  - horizontal pod autoscaler
+  - software architecture
+  - replication package
+references:
+  - type: article
+    title: >
+      Kubernetes-Orchestrated Reference Architecture for LMS–Recommender 
+      System Integration: Systematic Review and Design
+    authors:
+      - family-names: "Jingga"
+        given-names: "Kenny"
+    year: 2026
+    journal: "Proceedings of ICICEL 2026"
