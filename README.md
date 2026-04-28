@@ -1,7 +1,7 @@
 # Replication Package: LMS–Kubernetes Pilot Study
 ## *Kubernetes-Orchestrated Reference Architecture for LMS–Recommender System Integration*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/1223616279.svg)](https://doi.org/10.5281/zenodo.19857154)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 > **Paper:** Jingga, K., et al. (2026). "Kubernetes-Orchestrated Reference Architecture for LMS–Recommender System Integration: Systematic Review and Design." *Proceedings of ICICEL 2026*.
@@ -169,8 +169,8 @@ If you use this replication package, please cite:
   title     = {Replication Package: LMS–Kubernetes Pilot Study},
   year      = {2026},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.XXXXXXX},
-  url       = {https://doi.org/10.5281/zenodo.XXXXXXX}
+  doi       = {10.5281/zenodo.19857155},
+  url       = {https://doi.org/10.5281/zenodo.19857154}
 }
 ```
 
