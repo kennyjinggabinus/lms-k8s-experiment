@@ -1,0 +1,76 @@
+# ── LMS Service ──────────────────────────────────────────────────────
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lms-deployment
+  labels:
+    app: lms-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lms
+  template:
+    metadata:
+      labels:
+        app: lms
+    spec:
+      containers:
+      - name: lms
+        image: lms-service:v1
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8000
+        env:
+        - name: RECOMMENDER_URL
+          value: 'http://recommender-service:8001'
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: lms-service
+spec:
+  selector:
+    app: lms
+  type: LoadBalancer
+  ports:
+  - port: 8000
+    targetPort: 8000
+---
+
+# ── Recommender Service (No HPA, fixed 1 replica) ────────────────────
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: recommender-deployment
+  labels:
+    app: recommender-deployment
+spec:
+  replicas: 1                # FIXED — never changes in this condition
+  selector:
+    matchLabels:
+      app: recommender
+  template:
+    metadata:
+      labels:
+        app: recommender
+    spec:
+      containers:
+      - name: recommender
+        image: recommender-service:v1
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8001
+        # NOTE: No resource requests/limits — HPA cannot be used here
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: recommender-service
+spec:
+  selector:
+    app: recommender
+  type: ClusterIP
+  ports:
+  - port: 8001
+    targetPort: 8001

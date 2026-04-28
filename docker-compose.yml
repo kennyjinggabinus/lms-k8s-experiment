@@ -1,0 +1,21 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  lms:
+    image: lms-service:v1
+    container_name: lms-service
+    ports:
+      - '8080:8000'
+    environment:
+      - RECOMMENDER_URL=http://recommender:8001
+    depends_on:
+      - recommender
+    restart: unless-stopped
+
+  recommender:
+    image: recommender-service:v1
+    container_name: recommender-service
+    ports:
+      - '8001:8001'
+    restart: unless-stopped

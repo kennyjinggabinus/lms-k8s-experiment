@@ -1,0 +1,3 @@
+NAME                                      READY   STATUS    RESTARTS   AGE
+lms-deployment-5dcfdc468b-zpqr5           1/1     Running   0          31m
+recommender-deployment-85d7cf8c5f-hxk44   1/1     Running   0          3s
