@@ -4,7 +4,7 @@
 [![DOI](https://zenodo.org/badge/1223616279.svg)](https://doi.org/10.5281/zenodo.19857154)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-> **Paper:** Jingga, K., et al. (2026). "Kubernetes-Orchestrated Reference Architecture for LMS–Recommender System Integration: Systematic Review and Design." *Proceedings of ICICEL 2026*.
+> **Paper:** Jingga, K., et al. (2026). "A Kubernetes-Orchestrated Reference Architecture for LMS–Recommender System Integration: Scalability, Adaptability, and Robustness". **.
 
 ---
 
